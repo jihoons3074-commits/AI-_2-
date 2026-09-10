@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>최지훈 — 1년차 프론트엔드 개발자</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 탭 전환용 라디오 버튼 (JS 없이 CSS만으로 동작) -->
+    <input type="radio" name="tab" id="tab-about" class="tab-input" checked />
+    <input type="radio" name="tab" id="tab-awards" class="tab-input" />
+    <input type="radio" name="tab" id="tab-club" class="tab-input" />
+
+    <div class="layout">
+      <!-- 사이드바 -->
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">DY</span>
+          <div class="brand-text">
+            <strong>최지훈</strong>
+            <span>Frontend Developer, 1yr</span>
+          </div>
+        </div>
+
+        <nav class="filetabs" aria-label="주요 메뉴">
+          <label for="tab-about" class="filetab">
+            <span class="dot"></span>
+            <span class="filename">about<em>.md</em></span>
+          </label>
+          <label for="tab-awards" class="filetab">
+            <span class="dot"></span>
+            <span class="filename">awards<em>.log</em></span>
+          </label>
+          <label for="tab-club" class="filetab">
+            <span class="dot"></span>
+            <span class="filename">club<em>.txt</em></span>
+          </label>
+        </nav>
+
+        <div class="sidebar-foot">
+          <p>rev. 2026.09</p>
+          <p>Seoul, KR</p>
+        </div>
+      </aside>
+
+      <!-- 본문 -->
+      <main class="content">
+        <!-- 자기소개 -->
+        <section id="panel-about" class="panel panel-about">
+          <header class="panel-head">
+            <span class="path">~/dokyun/about.md</span>
+            <h1>안녕하세요, 최지훈입니다.</h1>
+            <p class="lede">
+              화면 너머의 사소한 불편함을 줄이는 일에 진심인 1년차 프론트엔드
+              개발자입니다.
+            </p>
+          </header>
+
+          <div class="grid-about">
+            <div class="avatar-block">
+              <div class="avatar">DY</div>
+              <ul class="facts">
+                <li><span>이름</span>최지훈</li>
+                <li><span>직군</span>프론트엔드 개발</li>
+                <li><span>경력</span>1년차 (2025.03~)</li>
+                <li><span>소속</span>스튜디오 라인</li>
+              </ul>
+            </div>
+
+            <div class="story">
+              <p>
+                대학에서 시각디자인을 전공하다 우연히 들은 웹 개발 수업에서
+                코드로 화면이 움직이는 순간에 매료되어 진로를 바꿨습니다. 지금은
+                사용자 인터페이스를 다듬고, 작은 인터랙션 하나에도 이유를 담으려
+                노력하는 개발자로 일하고 있습니다.
+              </p>
+              <p>
+                혼자 완성하는 코드보다, 함께 리뷰하며 더 나아지는 코드를
+                좋아합니다. 매주 팀 스터디에서 새로 배운 것을 정리해 공유하고,
+                주말에는 개인 프로젝트로 실험적인 UI를 만들어 봅니다.
+              </p>
+
+              <div class="skills">
+                <h2>주로 다루는 기술</h2>
+                <ul class="tag-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Git</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+
+              <div class="contact">
+                <h2>연락</h2>
+                <p>dokyun.kim@example.com · github.com/dokyunkim</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 수상실적 -->
+        <section id="panel-awards" class="panel panel-awards">
+          <header class="panel-head">
+            <span class="path">~/dokyun/awards.log</span>
+            <h1>수상실적</h1>
+            <p class="lede">크고 작은 도전들이 남긴 기록입니다.</p>
+          </header>
+
+          <ol class="log-list">
+            <li class="log-entry">
+              <span class="log-time">2026.05</span>
+              <div class="log-body">
+                <h3>교내 해커톤 대상</h3>
+                <p>
+                  48시간 동안 팀 3명과 함께 시각장애인을 위한 음성 안내 웹앱을
+                  기획·구현하여 대상을 수상했습니다.
+                </p>
+              </div>
+            </li>
+            <li class="log-entry">
+              <span class="log-time">2026.01</span>
+              <div class="log-body">
+                <h3>웹 접근성 개선 공모전 장려상</h3>
+                <p>
+                  지역 소상공인 홈페이지의 키보드 내비게이션과 명도 대비를
+                  개선한 사례를 제출해 장려상을 받았습니다.
+                </p>
+              </div>
+            </li>
+            <li class="log-entry">
+              <span class="log-time">2025.11</span>
+              <div class="log-body">
+                <h3>오픈소스 컨트리뷰션 어워드</h3>
+                <p>
+                  사내 오픈소스 UI 라이브러리에 접근성 관련 이슈 12건을 수정한
+                  공로로 분기 어워드를 수상했습니다.
+                </p>
+              </div>
+            </li>
+            <li class="log-entry">
+              <span class="log-time">2025.06</span>
+              <div class="log-body">
+                <h3>졸업작품 전시 우수상</h3>
+                <p>
+                  인터랙티브 타이포그래피를 활용한 졸업 전시 웹사이트로 학과
+                  우수상을 수상했습니다.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- 동아리소개 -->
+        <section id="panel-club" class="panel panel-club">
+          <header class="panel-head">
+            <span class="path">~/dokyun/club.txt</span>
+            <h1>동아리소개</h1>
+            <p class="lede">코드메이트 — 함께 만들고 함께 배우는 개발 동아리</p>
+          </header>
+
+          <div class="club-body">
+            <p>
+              코드메이트는 매주 목요일 저녁, 각자의 프로젝트를 들고 모여 서로의
+              코드를 리뷰하는 소모임입니다. 전공과 경력에 상관없이 웹을 만들고
+              싶은 사람이라면 누구나 참여할 수 있습니다.
+            </p>
+
+            <div class="club-grid">
+              <div class="club-fact">
+                <h3>창립</h3>
+                <p>2023년 3월</p>
+              </div>
+              <div class="club-fact">
+                <h3>인원</h3>
+                <p>18명</p>
+              </div>
+              <div class="club-fact">
+                <h3>모임 주기</h3>
+                <p>매주 목요일</p>
+              </div>
+              <div class="club-fact">
+                <h3>활동</h3>
+                <p>코드 리뷰, 미니 해커톤, 세미나</p>
+              </div>
+            </div>
+
+            <h2>주요 활동</h2>
+            <ul class="club-activities">
+              <li>매주 목요일 저녁 7시, 진행 중인 프로젝트 코드 리뷰 세션</li>
+              <li>분기별 24시간 미니 해커톤 개최</li>
+              <li>매달 한 번, 멤버가 돌아가며 진행하는 기술 세미나</li>
+              <li>연 1회 외부 개발자를 초청한 오픈 밋업</li>
+            </ul>
+
+            <p class="club-quote">
+              "완벽한 코드보다, 함께 고민한 흔적이 남는 코드를 만듭니다."
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
